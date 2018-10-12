@@ -1,0 +1,140 @@
+:root {
+	--darkest-blue: #0d3953;
+}
+
+html {
+	background-color: #fff;
+	text-rendering: optimizeLegibility;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.container-wrap {
+	width: 100%;
+	max-width: 100vw;
+}
+
+.header--body {
+	background-color: var(--darkest-blue);
+	width: 100%;
+	height: 60px;
+	clear: both;
+	overflow: hidden;
+	position: fixed;
+}
+
+.header--logo-place {
+	float: left;
+}
+
+.header--logo-place a.logo {
+	display: block;
+	height: 60px;
+	padding: 0 10px 0 20px;
+}
+
+.header--logo-place a.logo img {
+	width: auto;
+	height: 40px;
+	position: relative;
+	top: 10px;
+}
+
+.header--menu-button-place {
+	float: right;
+}
+
+.header--menu-button {
+	width: 60px;
+	height: 60px;
+	background-color: #0a2e43;
+	background-image: url('/images/gamburger.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	color: #fff;
+	font-size: 11px;
+	line-height: 90px;
+	text-align: center;
+	overflow: hidden;
+}
+
+.header--menu-button.for-3d {
+	background-color: transparent;
+	background-size: 40px;
+	background-position: center calc(50% - 6px);
+	background-image: url('/images/3d.svg');
+}
+
+.content-screen {
+	min-height: 100vh;
+}
+
+.content-screen.require-background {
+	background-size: cover;
+	background-position: center;
+}
+
+.landing-screen {
+	min-height: 100vh;
+	position: relative;
+}
+
+
+.top--slider-cont {
+	position: absolute;
+	top: 100px;
+	max-width: 500px;
+	box-sizing: border-box;
+	padding: 0 20px;
+	color: #fff;
+}
+
+.top--slider-item {
+	display: none;
+	opacity: 0;
+}
+
+.top--slider-item.active {
+	display: block;
+	opacity: 1;
+}
+
+.top--slider-item h1 {
+	font-size: 24px;
+	font-weight: 600;
+	line-height: 1;
+	margin-bottom: 15px;
+}
+
+.top--slider-item p {
+	font-size: 16px;
+	line-height: 1;
+	margin-bottom: 15px;
+}
+
+.top__slider-dots {
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    bottom: 30px;
+}
+
+.top__slider-dots span {
+    display: block;
+    width: 40px;
+    height: 6px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 1px solid #97c4e2;
+    margin-right: 12px;
+    cursor: pointer;
+}
+
+.top__slider-dots span.active {
+    border: none;
+    background-color: #ffce6a;
+}
