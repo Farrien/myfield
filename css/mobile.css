@@ -8,9 +8,16 @@ html {
 	font-family: Arial, Helvetica, sans-serif;
 }
 
+body {
+	margin: 0;
+	width: 100vw;
+	max-width: 100%;
+}
+
 .container-wrap {
 	width: 100%;
 	max-width: 100vw;
+	overflow: hidden;
 }
 
 .header--body {
@@ -20,6 +27,7 @@ html {
 	clear: both;
 	overflow: hidden;
 	position: fixed;
+	z-index: 9000;
 }
 
 .header--logo-place {
@@ -76,6 +84,7 @@ html {
 .landing-screen {
 	min-height: 100vh;
 	position: relative;
+	color: #0a2e43;
 }
 
 
@@ -112,29 +121,227 @@ html {
 }
 
 .top__slider-dots {
-    width: 100%;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    position: absolute;
-    bottom: 30px;
+	width: 100%;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	position: absolute;
+	bottom: 30px;
 }
 
-.top__slider-dots span {
-    display: block;
-    width: 40px;
-    height: 6px;
-    -webkit-border-radius: 3px;
-    border-radius: 3px;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    border: 1px solid #97c4e2;
-    margin-right: 12px;
-    cursor: pointer;
+.top__slider-dots ul {
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+	display: flex;
+	width: 100%;
+}
+
+.top__slider-dots span, .top__slider-dots li button {
+	display: block;
+	width: 40px;
+	height: 6px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	border: 1px solid #97c4e2;
+	margin-right: 12px;
+	cursor: pointer;
+	color: transparent;
 }
 
 .top__slider-dots span.active {
-    border: none;
-    background-color: #ffce6a;
+	border: none;
+	background-color: #ffce6a;
+}
+
+.landing-text {
+	padding: 20px;
+}
+
+.landing-text h1 {
+	line-height: 1.2;
+	font-size: 24px;
+	font-weight: 600;
+}
+
+.landing-text p {
+	line-height: 1.2;
+	font-size: 16px;
+	font-weight: 400;
+	letter-spacing: -.02em;
+	margin-bottom: 20px;
+}
+
+.landing-text p:last-child {margin-bottom: 0;}
+
+
+.benefit--block {
+	background-color: #0a2e43;
+	color: #fff;
+}
+
+.benefit--block .benefit--image {
+	height: 30vh;
+	min-height: 185px;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.benefit--block .benefit--text {
+	line-height: 1.2;
+	font-size: 16px;
+	font-weight: 400;
+	letter-spacing: -.02em;
+	padding: 20px;
+}
+
+.prop--image-filler {
+	height: 50vh;
+	background-size: cover;
+	background-position: center;
+}
+
+.head--grey {
+	line-height: 1.2;
+	font-size: 24px;
+	font-weight: 400;
+	color: #9fb3c5;
+	padding: 20px;
+}
+
+#google__map {
+	width: 100%;
+	padding-bottom: 100%;
+}
+
+.map {
+	font-size: 16px;
+}
+
+.map .landing-text h1 {
+	color: #0077bb;
+}
+
+.map__legend {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 10px 20px;
+}
+
+.map__legend .map__legend-item {
+	display: flex;
+	align-items: center;
+	width: 50%;
+	box-sizing: border-box;
+	margin-bottom: 20px;
+}
+.map__legend .map__legend-item img {margin-right: 15px;}
+
+@media screen and (max-width: 640px) {
+	.map__legend .map__legend-item {
+		flex-direction: column;
+		text-align: center;
+	}
+	.map__legend .map__legend-item img {
+		display: block;
+		margin: 0;
+		margin-bottom: 15px;
+	}
+}
+
+.time-mode {
+	box-sizing: border-box;
+	height: 20px;
+	padding-left: 30px;
+	background-image: url('/images/time-mode.svg');
+	background-repeat: no-repeat;
+	background-position: center left;
+}
+
+footer {
+	font-size: 14px;
+	color: #fff;
+	background-color: #0d3953;
+	padding: 20px;
+}
+
+footer div.salvia--logo {
+	
+}
+
+footer a.salvia--logo {
+	display: inline-block;
+	margin-bottom: 10px;
+}
+
+footer .salvia--logo img {
+	display: inline-block;
+	width: 150px;
+	position: relative;
+	bottom: -4px;
+}
+
+.footer--copyright {
+	margin-bottom: 10px;
+}
+
+footer a.bigd--logo {
+	display: block;
+}
+
+.apartments-info-slider-horizontal .landing-text h1 {color: #65b9e9;}
+.apartments-info-slider-horizontal .landing-text h2 {
+	color: rgba(255,255,255,0.83);
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 1.2;
+	margin: 15px 0;
+}
+.apartments-info-slider-horizontal .landing-text {color: #fff;}
+.apartments-info-slider-horizontal .landing-text ul {
+	list-style-type: none;
+	font-size: 16px;
+	line-height: 1.2;
+	margin: 0;
+	padding: 0;
+	margin-block-start: 0;
+	padding-inline-start: 0;
+}
+
+.apartments-info-slider-horizontal {
+	background-color: #0077bb;
+}
+
+button.btn {
+	background-color: #0789d4;
+	color: #fff;
+	font-size: 24px;
+	font-weight: 400;
+	padding: 15px 20px;
+	height: auto;
+	line-height: 1;
+}
+
+button.btn.to {
+	text-align: left;
+}
+
+button.btn.to:before {
+	position: absolute;
+	top: calc(50% - 13px);
+	right: 19px;
+    font-family: 'slick';
+    font-size: 30px;
+    line-height: 1;
+
+    opacity: 1;
+    color: white;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    content: '→';
 }
