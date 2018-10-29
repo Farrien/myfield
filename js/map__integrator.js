@@ -1,3 +1,5 @@
+if (document.getElementById('google__map')) {
+
 var json__style = [
 	{
 		"featureType": "administrative",
@@ -217,3 +219,5 @@ getMarkerInsert([56.089759, 54.247215], '', '/images/Map-icons/cafe.svg');
 google.maps.event.addListenerOnce(map, 'idle', function () {
 	
 });
+
+}

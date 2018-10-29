@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="54" height="54" viewBox="0 0 54 54">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fab11b;
+      }
+
+      .cls-2 {
+        fill: #fff;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <circle cx="27" cy="27" r="27" class="cls-1"/>
+  <path d="M38.989,37.643 L37.644,38.989 L27.375,28.720 L17.107,38.989 L15.761,37.643 L26.030,27.375 L15.761,17.107 L17.107,15.761 L27.375,26.030 L37.644,15.761 L38.989,17.107 L28.720,27.375 L38.989,37.643 Z" class="cls-2"/>
+</svg>
