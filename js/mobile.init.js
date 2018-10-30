@@ -23,8 +23,3 @@ $('.top--slider').slick({
 	mobileFirst : true,
 	swipe : false
 });
-
-$('#drop-menu').click(function() {
-	$('.header--dropdown-menu').toggleClass('dropdown-open');
-	
-});

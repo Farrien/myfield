@@ -25,8 +25,8 @@
 			<div class="apartment--links">
 				<div class="apartment--info-row">Этаж</div>
 				<div class="apartment--info-row">Комнат</div>
-				<div class="apartment--info-row twice">Площадь</div>
-				<div class="apartment--info-row twice">Цена</div>
+				<div class="apartment--info-row ">Площадь</div>
+				<div class="apartment--info-row ">Цена</div>
 			</div>
 			<div id="for-results">
 			
@@ -94,7 +94,7 @@ var updatedRange = function() {
 		success: function (data) {
 			var fragment = document.createDocumentFragment();
 			data.forEach((item) => {
-				$(fragment).append('<a href="/apartment/' + item.number + '"><div class="apartment--links"><div class="apartment--info-row">' + item.floor + '</div><div class="apartment--info-row">' + item.rooms + '</div><div class="apartment--info-row twice">' + item.area + '</div><div class="apartment--info-row twice">' + item.price + '</div></div></a>');
+				$(fragment).append('<a href="/apartment/' + item.number + '"><div class="apartment--links"><div class="apartment--info-row">' + item.floor + '</div><div class="apartment--info-row">' + item.rooms + '</div><div class="apartment--info-row ">' + item.area + '</div><div class="apartment--info-row ">' + item.price + '</div></div></a>');
 			});
 			
 			$('#for-results').html(fragment);

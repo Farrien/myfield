@@ -323,6 +323,7 @@ footer {
 	color: #fff;
 	background-color: #0d3953;
 	padding: 20px;
+	text-align: center;
 }
 
 footer div.salvia--logo {
@@ -347,6 +348,32 @@ footer .salvia--logo img {
 
 footer a.bigd--logo {
 	display: block;
+}
+
+.phone--link {
+	margin-bottom: 10px;
+}
+
+.phone--link a {
+	display: block;
+	border-radius: 20px;
+	line-height: 40px;
+	font-size: 24px;
+	margin: 0 auto;
+	background-color: #f9b01a;
+	color: #fff;
+	text-align: center;
+	position: relative;
+}
+
+.phone--link a span {
+	color: #0d3953;
+	background-image: url('/images/svg/tel-blue.svg');
+	background-position: left;
+	background-repeat: no-repeat;
+	background-size: 24px;
+	padding-left: 30px;
+	letter-spacing: -.02em;
 }
 
 .apartments-info-slider-horizontal .landing-text h1 {color: #65b9e9;}
@@ -696,6 +723,10 @@ a.download-icon:before {
 
 .parameters--block {
 	padding: 0 20px 20px;
+	box-sizing: border-box;
+	min-height: 404px;
+	height: calc(100vh - 64px - 60px - 40px);
+	max-height: 420px;
 }
 
 .parameter--range {
@@ -820,12 +851,14 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 	color: #fff;
 	font-size: 14px;
 	background-color: #0d3953;
+	padding-bottom: 20px;
 }
 
 .apartment--links {
 	display: flex;
 	justify-content: space-between;
 	line-height: 40px;
+	padding: 0 20px;
 }
 
 #for-results .apartment--links {
@@ -840,3 +873,84 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 }
 
 .apartment--info-row.twice {flex: 2;}
+
+.about--block {
+	background-color: #fff;
+	padding: 20px;
+}
+.about--block p {
+	line-height: 1.5;
+	font-size: 16px;
+	margin: 0 0 20px;
+}
+
+.about--block a {
+	display: block;
+	width: 200px;
+	border-radius: 20px;
+	line-height: 40px;
+	font-size: 18px;
+	margin: 0 auto;
+	background-color: #f9b01a;
+	color: #0a2e43;
+	text-align: center;
+	position: relative;
+	
+}
+
+.owl-carousel {
+	height: 100vh;
+	overflow: hidden;
+}
+
+.owl-nav {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+
+.owl-carousel .owl-item img {
+	height: 100vh !important;
+	width: auto !important;
+}
+
+.slides-navigation a {
+	background: #fff;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+}
+.slides-navigation a.next {
+	background-image: url('/assets/img/icons/right.svg');
+	right: 10px;
+}
+.slides-navigation a.prev {
+	background-image: url('/assets/img/icons/left.svg');
+	left: 10px;
+}
+
+.slides-pagination {
+	bottom: 10px;
+}
+
+.slides-pagination a {
+	background-color: #fff;
+	border: none;
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+	margin: 0 4px;
+}
+
+.slides-pagination a.current {
+	background-color: #f9b01a;
+}
+
+.superslides-window-fix {
+	max-height: calc(100vh - 60px);
+	padding-top: 60px;
+}

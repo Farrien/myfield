@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="stylesheet" href="css/first.css">
-	<link rel="stylesheet" href="css/mobile.css">
+	<link rel="stylesheet" href="/css/first.css">
+	<link rel="stylesheet" href="/css/mobile.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, shrink-to-fit=no, user-scalable=no">
 
 	<script type="text/javascript" src="//maps.google.com/maps/api/js?key=AIzaSyAQ7lpPm6k8YCrQDvNgwYsZ_Aq9uUI5PCA"></script>
