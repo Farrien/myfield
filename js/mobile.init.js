@@ -1,4 +1,4 @@
-
+/*
 $('.apartments-info-slider-horizontal').slick({
 	accessibility : true,
 	autoplay : true,
@@ -10,6 +10,7 @@ $('.apartments-info-slider-horizontal').slick({
 	
 	mobileFirst : true
 });
+*/
 
 $('.top--slider').slick({
 	dots : true,

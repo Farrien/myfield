@@ -74,7 +74,7 @@ body {
 .header--dropdown-menu {
 	width: 100%;
 	max-width: 300px;
-	background-color: #0a2e43;
+	background-color: #092535;
 	color: #fff;
 	position: absolute;
 	top: 60px;
@@ -198,9 +198,7 @@ body {
 	display: block;
 	width: 40px;
 	height: 6px;
-	-webkit-border-radius: 3px;
 	border-radius: 3px;
-	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 	border: 1px solid #97c4e2;
 	margin-right: 12px;
@@ -209,8 +207,12 @@ body {
 }
 
 .top__slider-dots span.active, .top__slider-dots li.slick-active button {
-	border: none;
+	border-color: transparent;
 	background-color: #ffce6a;
+}
+
+.slick-dotted.slick-slider {
+	margin-bottom: 0 !important;
 }
 
 .landing-text {
@@ -224,7 +226,7 @@ body {
 }
 
 .landing-text p {
-	line-height: 1.2;
+	line-height: 1.5;
 	font-size: 16px;
 	font-weight: 400;
 	letter-spacing: -.02em;
@@ -399,6 +401,58 @@ footer a.bigd--logo {
 	background-color: #0077bb;
 }
 
+/* for slidings */
+.apartments-info-slider-horizontal {
+	
+}
+
+.apartments-info-slider-horizontal .aish-item {
+	overflow: hidden;
+	background-image: url('/assets/img/icons/down.svg');
+	background-size: 20px;
+	background-repeat: no-repeat;
+	background-position: calc(100% - 20px) calc(30px - 4px);
+	transition: 100ms background-color linear, 100ms color linear;
+}
+
+.apartments-info-slider-horizontal .aish-item.active {
+	background-image: url('/assets/img/icons/up.svg');
+}
+
+.apartments-info-slider-horizontal .aish-item.active .landing-text {
+	display: block;
+}
+
+.apartments-info-slider-horizontal .aish-item .aish--title {
+	font-size: 24px;
+	font-weight: 700;
+	padding: 0 20px;
+	line-height: 60px;
+	color: #65b9e9;
+}
+
+.apartments-info-slider-horizontal .aish-item .landing-text {
+	padding: 0;
+	display: none;
+	width: 100% !important;
+}
+
+.aish-item .landing-text h2, .aish-item .landing-text ul {
+	padding: 0 20px;
+}
+
+.aish-item .aish--to-apartment {
+	padding: 20px;
+}
+
+.aish-item .aish--to-apartment .btn {
+	padding: 0;
+	line-height: 40px;
+	padding: 0 20px;
+	font-size: 20px;
+	border-color: #0c9bee;
+}
+
 button.btn {
 	background-color: #0789d4;
 	color: #fff;
@@ -477,6 +531,7 @@ h1.page-title {
 
 .plan--modes .plan--mode.chosen span.plan-button {
 	background-color: #092c41;
+	border: none;
 	
 }
 
@@ -488,7 +543,7 @@ h1.page-title {
 	min-height: calc(100vh - 60px - 44px - 40px - 60px);
 	box-sizing: border-box;
 	padding-top: 20px;
-	position: relative;
+	position: absolute;
 }
 
 .plan--image img {
@@ -852,6 +907,23 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 	font-size: 14px;
 	background-color: #0d3953;
 	padding-bottom: 20px;
+	padding-top: 40px;
+	position: relative;
+}
+
+.apartment--links.header-slip {
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	background-color: #0d3953;
+	border-top: 1px solid transparent;
+}
+
+.apartment--links.header-slip.gone {
+	top: 60px;
+	position: fixed;
+	border-color: #2b536f;
 }
 
 .apartment--links {

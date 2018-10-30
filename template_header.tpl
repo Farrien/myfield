@@ -30,19 +30,20 @@
 		<div class="header--dropdown-menu">
 			<div class="own-body">
 				<ul class="v-menu">
-					<li><a class="dropdown-menu-link" href="">Выбрать квартиру</a></lI>
-					<li><a class="dropdown-menu-link" href="">Расположение</a></lI>
-					<li><a class="dropdown-menu-link" href="">Галерея</a></lI>
-					<li><a class="dropdown-menu-link" href="">Ход строительства</a></lI>
-					<li><a class="dropdown-menu-link" href="">Как купить</a></lI>
-					<li><a class="dropdown-menu-link" href="">О застройщике</a></lI>
+					<li><a class="dropdown-menu-link" href="/podbor.php">Выбрать квартиру</a></lI>
+					<li><a class="dropdown-menu-link" href="/gallery.php">Галерея</a></lI>
+					<li><a class="dropdown-menu-link" href="/news.php">Новости и акции</a></lI>
+					<li><a class="dropdown-menu-link" href="/photopage.php">Ход строительства</a></lI>
+					<li><a class="dropdown-menu-link" href="/buy.php">Как купить</a></lI>
+					<li><a class="dropdown-menu-link" href="/about.php">О застройщике</a></lI>
 				</ul>
 				<div class="dropdown-menu-section">О проекте</div>
 				<ul class="v-menu">
-					<li><a class="dropdown-menu-link" href="">Квартира</a></lI>
-					<li><a class="dropdown-menu-link" href="">Подъезд</a></lI>
-					<li><a class="dropdown-menu-link" href="">Дом</a></lI>
-					<li><a class="dropdown-menu-link" href="">Двор</a></lI>
+					<li><a class="dropdown-menu-link" href="/#where">Расположение</a></lI>
+					<li><a class="dropdown-menu-link" href="/#exor1" onclick="aishClick(1);">Квартира</a></lI>
+					<li><a class="dropdown-menu-link" href="/#exor2" onclick="aishClick(2);">Подъезд</a></lI>
+					<li><a class="dropdown-menu-link" href="/#exor3" onclick="aishClick(3);">Дом</a></lI>
+					<li><a class="dropdown-menu-link" href="/#exor4" onclick="aishClick(4);">Двор</a></lI>
 				</ul>
 				
 				<div class="header--social">
@@ -57,7 +58,7 @@
 			</div>
 		</div>
 		<div class="header--menu-button-place">
-			<div class="header--menu-button for-3d">3D-тур</div>
+			<div class="header--menu-button for-3d" onclick="location.href='/vtour/tour.html';">3D-тур</div>
 		</div>
 	</div>
 	<!-- / ШАПКА -->

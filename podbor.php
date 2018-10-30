@@ -22,7 +22,7 @@
 		</div>
 		
 		<div class="results--block">
-			<div class="apartment--links">
+			<div id="for-slipping" class="apartment--links header-slip">
 				<div class="apartment--info-row">Этаж</div>
 				<div class="apartment--info-row">Комнат</div>
 				<div class="apartment--info-row ">Площадь</div>
@@ -107,6 +107,19 @@ var updatedRange = function() {
 };
 
 updatedRange();
+
+
+$(window).scroll(function(e) {
+//	console.log(this);
+//	console.log(e);
+	var scrollTop = $(window).scrollTop() + 60;
+	if ( scrollTop > $('.results--block').offset().top) { 
+		$('#for-slipping').addClass('gone');
+	} else {
+		$('#for-slipping').removeClass('gone');
+		
+	}
+});
 </script>
 
 <?include 'template_footer.tpl';?>

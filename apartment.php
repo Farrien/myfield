@@ -5,18 +5,23 @@
 	<div class="apartment--page">
 		<h1 class="page-title">Выбор квартиры</h1>
 		<div class="plan--modes">
-			<div class="plan--mode chosen">
+			<div class="plan--mode chosen" data-point="image-plan">
 				<span class="plan-button"><img src="/assets/img/icons/plane.svg"></span>
 				План
 			</div>
-			<div class="plan--mode">
+			<div class="plan--mode" data-point="image-3d">
 				<span class="plan-button"><img src="/assets/img/icons/3d_plane-01.svg"></span>
 				3D
 			</div>
 		</div>
-		<div class="plan--image">
-			<img src="/assets/img/plans/section3/storey--type/png/8.png">
-			<div class="plan--compass"></div>
+		<div style="position: relative; min-height: calc(100vh - 60px - 44px - 40px - 60px);">
+			<div class="plan--image" id="image-plan">
+				<img src="/assets/img/plans/section3/storey--type/png/8.png">
+				<div class="plan--compass"></div>
+			</div>
+			<div class="plan--image" id="image-3d" style="display: none;">
+				<img src="/assets/img/isometry/3_1.png">
+			</div>
 		</div>
 		<div class="apartment--info">
 			<div class="apartment--info-section">
@@ -55,5 +60,17 @@
 		</div>
 	</div>
 </div>
+
+<script>
+$('.plan--mode').click(function() {
+	$(this).addClass('chosen');
+	$(this).siblings().removeClass('chosen');
+	var point = '#' + $(this).data('point');
+	console.log(point);
+	$('.plan--image').fadeOut(300, function() {
+		$(point).fadeIn(300);
+	});
+});
+</script>
 
 <?include 'template_footer.tpl';?>

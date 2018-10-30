@@ -1,0 +1,84 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="/css/first.css">
+	<link rel="stylesheet" href="/css/mobile.css">
+	<title>3D тур</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+	<meta http-equiv="x-ua-compatible" content="IE=edge" />
+	<style>
+		@-ms-viewport { width:device-width; }
+		@media only screen and (min-device-width:800px) { html { overflow:hidden; } }
+		html { height:100%; }
+		body { height:100%; overflow:hidden; margin:0; padding:0; font-family:Arial, Helvetica, sans-serif; font-size:16px; color:#FFFFFF; background-color:#000000; }
+	</style>
+	<script type="text/javascript" src="/bower_components/jquery.2.2.4.js"></script>
+</head>
+<body>
+
+<!-- ШАПКА -->
+<div class="header--body">
+	<div class="header--logo-place">
+		<a href="/" class="logo">
+			<img src="/images/logo.png">
+		</a>
+	</div>
+	<div class="header--menu-button-place">
+		<div class="header--menu-button" id="drop-menu">Меню</div>
+	</div>
+	<div class="header--dropdown-menu">
+		<div class="own-body">
+				<ul class="v-menu">
+					<li><a class="dropdown-menu-link" href="/podbor.php">Выбрать квартиру</a></lI>
+					<li><a class="dropdown-menu-link" href="/gallery.php">Галерея</a></lI>
+					<li><a class="dropdown-menu-link" href="/news.php">Новости и акции</a></lI>
+					<li><a class="dropdown-menu-link" href="/photopage.php">Ход строительства</a></lI>
+					<li><a class="dropdown-menu-link" href="/buy.php">Как купить</a></lI>
+					<li><a class="dropdown-menu-link" href="/about.php">О застройщике</a></lI>
+				</ul>
+				<div class="dropdown-menu-section">О проекте</div>
+				<ul class="v-menu">
+					<li><a class="dropdown-menu-link" href="/#where">Расположение</a></lI>
+					<li><a class="dropdown-menu-link" href="/#exor1" onclick="aishClick(1);">Квартира</a></lI>
+					<li><a class="dropdown-menu-link" href="/#exor2" onclick="aishClick(2);">Подъезд</a></lI>
+					<li><a class="dropdown-menu-link" href="/#exor3" onclick="aishClick(3);">Дом</a></lI>
+					<li><a class="dropdown-menu-link" href="/#exor4" onclick="aishClick(4);">Двор</a></lI>
+				</ul>
+			
+			<div class="header--social">
+				Мы в соцсетях
+				<a target="_blank" href="https://vk.com/jkvisotaneft">
+					<img src="/images/vk-logo.svg" height="26px">
+				</a>
+				<a target="_blank" href="https://www.instagram.com/salviaufa/">
+					<img src="/images/instagram-logo.svg" height="30px">
+				</a>
+			</div>
+		</div>
+	</div>
+	<div class="header--menu-button-place">
+			<div class="header--menu-button for-3d" onclick="location.href='/vtour/tour.html';">3D-тур</div>
+	</div>
+</div>
+<!-- / ШАПКА -->
+
+<script src="tour.js"></script>
+
+<div id="pano" style="width:100%;height:100%;">
+	<noscript><table style="width:100%;height:100%;"><tr style="vertical-align:middle;"><td><div style="text-align:center;">ERROR:<br/><br/>Javascript not activated<br/><br/></div></td></tr></table></noscript>
+	<script>
+		embedpano({swf:"tour.swf", xml:"tour.xml", target:"pano", html5:"prefer", mobilescale:1.0, passQueryParameters:true});
+	</script>
+</div>
+
+<script>
+$('#drop-menu').click(function() {
+	$('.header--dropdown-menu').toggleClass('dropdown-open');
+});
+</script>
+
+</body>
+</html>

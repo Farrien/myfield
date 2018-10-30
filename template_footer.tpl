@@ -11,7 +11,7 @@
 					<img src="/assets/img/Logo_Salvia_white-01.svg">
 				</a>
 			</div>
-			<div class="footer--copyright">© 2017. Все права защищены.</div>
+			<div class="footer--copyright">© 2018. Все права защищены.</div>
 			<a href="http://thebigd.ru" target="_blank" class="bigd--logo">
 				<img src="/images/bigD.png">
 			</a>
@@ -24,6 +24,10 @@
 $('#drop-menu').click(function() {
 	$('.header--dropdown-menu').toggleClass('dropdown-open');
 	
+});
+
+$('a.dropdown-menu-link').click(function() {
+	$('.header--dropdown-menu').removeClass('dropdown-open');
 });
 </script>
 </body>
